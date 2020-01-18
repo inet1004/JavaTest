@@ -1,6 +1,7 @@
 package co.four.grade.dto;
 
-public class GradeDto{
+
+public class GradeDto{ //서장원
 	
 	private int grade_id;
 	private String student_id;
@@ -73,14 +74,6 @@ public class GradeDto{
 		this.student_grade = student_grade;
 	}
 
-	@Override
-	public String toString()
-	{
-		return "GradeDto [grade_id=" + grade_id + ", student_id=" + student_id + ", student_name=" + student_name
-				+ ", subject_id=" + subject_id + ", subject_name=" + subject_name + ", student_grade=" + student_grade
-				+ "]";
-	}
-	
 	
 	
 	

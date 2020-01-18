@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class DAO{
+public class DAO{ //서장원
 	public Connection conn;
 	public PreparedStatement psmt;
 	public ResultSet rs;
@@ -21,12 +21,11 @@ public class DAO{
 	private String password;
 
 	public DAO(){
-		getConfiguration(); //환경파일 읽어오기
+		getConfiguration(); 
 		try{
 			Class.forName(driver);
 			conn = DriverManager.getConnection(url, user, password);
 		}catch(ClassNotFoundException | SQLException e){
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -43,7 +42,6 @@ public class DAO{
 			user = properties.getProperty("user");
 			password = properties.getProperty("password");
 		}catch(IOException e){
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

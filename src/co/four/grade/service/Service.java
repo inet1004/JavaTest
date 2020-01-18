@@ -4,7 +4,7 @@ import java.util.List;
 
 import co.four.grade.dto.GradeDto;
 
-public interface Service{
+public interface Service{ //서장원
 
 	public List<GradeDto> allSelect();
 
